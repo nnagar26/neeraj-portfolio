@@ -3,16 +3,25 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Neeraj Nagar · Portfolio</title>
-  <meta name="description" content="Neeraj Nagar — Software Engineer, MASc at University of Waterloo. Ex-Samsung R&D" />
-  <link rel="icon" href="assets/profile.jpeg" type="image/svg+xml" />
+  <title>Neeraj Nagar — Software Engineer | C++ &amp; Systems</title>
+  <meta name="description" content="Portfolio of Neeraj Nagar, a Cisco software engineer and former Samsung R&amp;D engineer specializing in C++, Python, high-performance systems, and computer vision." />
+  <meta name="theme-color" content="#ffffff" />
+  <link rel="canonical" href="https://nnagar.netlify.app/" />
+  <meta property="og:title" content="Neeraj Nagar — Software Engineer" />
+  <meta property="og:description" content="Cisco software engineer and former Samsung R&amp;D engineer building reliable, high-performance software with C++ and Python." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://nnagar.netlify.app/" />
+  <meta property="og:image" content="https://nnagar.netlify.app/assets/profile.jpeg" />
+  <meta property="og:image:alt" content="Neeraj Nagar" />
+  <meta name="twitter:card" content="summary" />
+  <link rel="icon" href="assets/profile.jpeg" type="image/jpeg" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
 <header class="site-header" id="top">
-  <nav class="container">
+  <nav class="container" aria-label="Main navigation">
     <a class="brand" href="#top" aria-label="Home">NN</a>
 
     <button class="menu" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="nav">
@@ -29,7 +38,6 @@
     </ul>
 
     <div class="top-actions">
-      <!-- Socials removed from top-right per your request -->
       <button id="themeToggle" class="icon-btn is-pill" aria-label="Switch theme" aria-pressed="false" title="Toggle light/dark">◐</button>
     </div>
   </nav>
@@ -38,8 +46,7 @@
 <section class="hero" style="--hero:url('assets/hero.jpg')">
   <div class="overlay"></div>
   <div class="container hero-inner">
-    <!-- Use hi-res images with srcset to stay sharp when large -->
-    <img id="avatar" class="avatar" src="assets/profile_100.jpeg" sizes="(min-width: 900px) 280px, 40vw" alt="Neeraj Nagar" />
+    <img id="avatar" class="avatar" src="assets/profile_100.jpeg" sizes="(min-width: 900px) 280px, 40vw" alt="Neeraj Nagar" decoding="async" fetchpriority="high" />
     <div class="hero-copy">
       <h1>Neeraj Nagar</h1>
       <p class="hero-role">Software Engineer specializing in C++ and high-performance systems.</p>
@@ -50,10 +57,10 @@
       </div>
       <div class="hero-socials" aria-label="Professional profiles">
         <a class="hero-social-link" href="https://github.com/nnagar26" target="_blank" rel="noopener">
-          <img class="btn-icon" src="assets/icon-github.png" alt="" /> GitHub
+          <img class="btn-icon" src="assets/icon-github.png" alt="" decoding="async" /> GitHub
         </a>
         <a class="hero-social-link" href="https://www.linkedin.com/in/nnagar26/" target="_blank" rel="noopener">
-          <img class="btn-icon" src="assets/icon-linkedin.png" alt="" /> LinkedIn
+          <img class="btn-icon" src="assets/icon-linkedin.png" alt="" decoding="async" /> LinkedIn
         </a>
       </div>
     </div>
@@ -121,7 +128,7 @@
       <article class="card hover-elevate">
         <header class="card-head">
           <div class="head-left">
-            <img class="org-logo" src="assets/logo-cisco.png" alt="Cisco logo" loading="lazy"/>
+            <img class="org-logo" src="assets/logo-cisco.png" alt="Cisco logo" loading="lazy" decoding="async" />
             <div class="exp-text">
                 <div class="exp-role">Software Engineer III</div>
                 <div class="exp-company">Cisco Systems Canada Inc.</div>
@@ -140,7 +147,7 @@
       <article class="card hover-elevate">
         <header class="card-head">
           <div class="head-left">
-            <img class="org-logo" src="assets/logo-samsung-research.png" alt="Samsung Research logo" />
+            <img class="org-logo" src="assets/logo-samsung-research.png" alt="Samsung Research logo" loading="lazy" decoding="async" />
             <div class="exp-text">
               <div class="exp-role">Software Engineer, Camera Team</div>
               <div class="exp-company">Samsung R&amp;D Institute India</div>
@@ -159,7 +166,7 @@
       <article class="card hover-elevate">
         <header class="card-head">
           <div class="head-left">
-            <img class="org-logo" src="assets/logo-uwaterloo.png" alt="University of Waterloo logo" />
+            <img class="org-logo" src="assets/logo-uwaterloo.png" alt="University of Waterloo logo" loading="lazy" decoding="async" />
             <div class="exp-text">
               <div class="exp-role">Graduate Research Student</div>
               <div class="exp-company">University of Waterloo</div>
@@ -177,7 +184,7 @@
       <article class="card hover-elevate">
         <header class="card-head">
           <div class="head-left">
-            <img class="org-logo" src="assets/logo-uwaterloo.png" alt="University of Waterloo logo" loading="lazy"/>
+            <img class="org-logo" src="assets/logo-uwaterloo.png" alt="University of Waterloo logo" loading="lazy" decoding="async" />
             <div class="exp-text">
               <div class="exp-role">Teaching Assistant</div>
               <div class="exp-company">University of Waterloo</div>
@@ -191,8 +198,7 @@
       <article class="card hover-elevate">
         <header class="card-head">
           <div class="head-left">
-            <img class="org-logo" src="assets/logo-samsung-research.png" alt="Samsung Research logo" />
-            <!-- <h3>Software Engineer Intern · Samsung R&D Institute India</h3> -->
+            <img class="org-logo" src="assets/logo-samsung-research.png" alt="Samsung Research logo" loading="lazy" decoding="async" />
             <div class="exp-text">
               <div class="exp-role">Software Engineer Intern</div>
               <div class="exp-company">Samsung R&amp;D Institute India</div>
@@ -217,7 +223,7 @@
       <div class="edu-item card hover-elevate">
         <header class="card-head">
           <div class="head-left">
-            <img class="org-logo" src="assets/logo-uwaterloo.png" alt="University of Waterloo logo" />
+            <img class="org-logo" src="assets/logo-uwaterloo.png" alt="University of Waterloo logo" loading="lazy" decoding="async" />
             <h3>University of Waterloo — MASc (thesis), Computer Software in Electrical and Computer Engineering</h3>
           </div>
           <span class="date">Sep 2023 – Aug 2025</span>
@@ -229,7 +235,7 @@
       <div class="edu-item card hover-elevate">
         <header class="card-head">
           <div class="head-left">
-            <img class="org-logo" src="assets/logo-iitbhu.png" alt="IIT (BHU) logo" />
+            <img class="org-logo" src="assets/logo-iitbhu.png" alt="IIT (BHU) logo" loading="lazy" decoding="async" />
             <h3>IIT (BHU), Varanasi — B.Tech, Electronics Engineering</h3>
           </div>
           <span class="date">Jul 2016 – May 2020</span>
@@ -249,7 +255,7 @@
       <div class="edu-item card hover-elevate">
         <header class="card-head">
           <div class="head-left">
-            <img class="org-logo" src="assets/logo-uwaterloo.png" alt="University of Waterloo logo" />
+            <img class="org-logo" src="assets/logo-uwaterloo.png" alt="University of Waterloo logo" loading="lazy" decoding="async" />
             <div class="edu-text">
               <div class="edu-university">University of Waterloo</div>
               <div class="edu-degree">MASc (thesis), Computer Software in Electrical and Computer Engineering</div>
@@ -265,7 +271,7 @@
       <div class="edu-item card hover-elevate">
         <header class="card-head">
           <div class="head-left">
-            <img class="org-logo" src="assets/logo-iitbhu.png" alt="IIT (BHU) logo" />
+            <img class="org-logo" src="assets/logo-iitbhu.png" alt="IIT (BHU) logo" loading="lazy" decoding="async" />
             <div class="edu-text">
               <div class="edu-university">IIT (BHU), Varanasi</div>
               <div class="edu-degree">B.Tech, Electronics Engineering</div>
