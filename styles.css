@@ -841,6 +841,12 @@ html[data-theme="dark"]{
   .contact-meta a:hover {
     color: var(--accent);
   }
+
+  .contact-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
   
   /* Education */
   .edu{display:grid; gap:16px}
@@ -1881,23 +1887,6 @@ html[data-theme="dark"]{
   margin-top: 2px;
 }
 
-
-
-/* ========= Contact form improvements ========= */
-
-  /* 1) Make the contact grid a single centered column */
-.contact-section .grid-2{
-  display: grid;
-  grid-template-columns: 1fr;   /* one column */
-  justify-items: center;        /* center the child horizontally */
-}
-
-/* 2) Keep the form nicely sized and centered */
-#contactForm{
-  width: 100%;
-  max-width: 600px;             /* you already set this inline; moving to CSS is cleaner */
-  margin: 0 auto;
-}
 
 
   @media (max-width: 640px) {
