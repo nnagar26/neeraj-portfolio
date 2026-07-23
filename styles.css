@@ -295,44 +295,6 @@ html[data-theme="dark"]{
     color: var(--accent);
   }
 
-  .impact-strip {
-    background: var(--bg);
-    border-bottom: 1px solid var(--border);
-  }
-
-  .impact-grid {
-    display: grid;
-    grid-template-columns: repeat(4, minmax(0, 1fr));
-    padding-top: 24px;
-    padding-bottom: 24px;
-  }
-
-  .impact-item {
-    padding: 4px 24px;
-    text-align: center;
-  }
-
-  .impact-item + .impact-item {
-    border-left: 1px solid var(--border);
-  }
-
-  .impact-item strong,
-  .impact-item span {
-    display: block;
-  }
-
-  .impact-item strong {
-    color: var(--accent);
-    font-size: 24px;
-    line-height: 1.2;
-  }
-
-  .impact-item span {
-    margin-top: 5px;
-    color: var(--muted);
-    font-size: 13px;
-  }
-  
   /* Enhanced section backgrounds */
   .section.alt {
     background: linear-gradient(135deg, 
@@ -858,6 +820,27 @@ html[data-theme="dark"]{
   .details span{display:block; font-size:12px; color:var(--muted); text-transform:uppercase; letter-spacing:.08em}
   .details a{color:var(--text); transition: color .3s ease}
   .details a:hover { color: var(--accent); }
+
+  .about-copy {
+    max-width: 820px;
+  }
+
+  .contact-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px 20px;
+    margin: 12px 0 24px;
+    color: var(--muted);
+    font-size: 14px;
+  }
+
+  .contact-meta a {
+    color: var(--text);
+  }
+
+  .contact-meta a:hover {
+    color: var(--accent);
+  }
   
   /* Education */
   .edu{display:grid; gap:16px}
@@ -1170,19 +1153,6 @@ html[data-theme="dark"]{
   @media (max-width: 600px){
     body{ font-size: 16px; }
     h2{ font-size: clamp(20px, 5.5vw, 26px); }
-    .impact-grid {
-      grid-template-columns: repeat(2, minmax(0, 1fr));
-      row-gap: 20px;
-    }
-    .impact-item {
-      padding: 2px 12px;
-    }
-    .impact-item:nth-child(3) {
-      border-left: 0;
-    }
-    .impact-item strong {
-      font-size: 21px;
-    }
     .btn{
       width: 100%;
       justify-content: center;
