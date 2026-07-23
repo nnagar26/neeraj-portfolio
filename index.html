@@ -3,16 +3,25 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Neeraj Nagar · Portfolio</title>
-  <meta name="description" content="Neeraj Nagar — Software Engineer, MASc at University of Waterloo. Ex-Samsung R&D" />
-  <link rel="icon" href="assets/profile.jpeg" type="image/svg+xml" />
+  <title>Neeraj Nagar — Software Engineer | C++ &amp; Systems</title>
+  <meta name="description" content="Portfolio of Neeraj Nagar, a Cisco software engineer and former Samsung R&amp;D engineer specializing in C++, Python, high-performance systems, and computer vision." />
+  <meta name="theme-color" content="#ffffff" />
+  <link rel="canonical" href="https://nnagar.netlify.app/" />
+  <meta property="og:title" content="Neeraj Nagar — Software Engineer" />
+  <meta property="og:description" content="Cisco software engineer and former Samsung R&amp;D engineer building reliable, high-performance software with C++ and Python." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://nnagar.netlify.app/" />
+  <meta property="og:image" content="https://nnagar.netlify.app/assets/profile.jpeg" />
+  <meta property="og:image:alt" content="Neeraj Nagar" />
+  <meta name="twitter:card" content="summary" />
+  <link rel="icon" href="assets/profile.jpeg" type="image/jpeg" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
 <header class="site-header" id="top">
-  <nav class="container">
+  <nav class="container" aria-label="Main navigation">
     <a class="brand" href="#top" aria-label="Home">NN</a>
 
     <button class="menu" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="nav">
@@ -29,7 +38,6 @@
     </ul>
 
     <div class="top-actions">
-      <!-- Socials removed from top-right per your request -->
       <button id="themeToggle" class="icon-btn is-pill" aria-label="Switch theme" aria-pressed="false" title="Toggle light/dark">◐</button>
     </div>
   </nav>
@@ -38,22 +46,21 @@
 <section class="hero" style="--hero:url('assets/hero.jpg')">
   <div class="overlay"></div>
   <div class="container hero-inner">
-    <!-- Use hi-res images with srcset to stay sharp when large -->
-    <img id="avatar" class="avatar" src="assets/profile_100.jpeg" sizes="(min-width: 900px) 280px, 40vw" alt="Neeraj Nagar" />
+    <img id="avatar" class="avatar" src="assets/profile_100.jpeg" sizes="(min-width: 900px) 280px, 40vw" alt="Neeraj Nagar" decoding="async" fetchpriority="high" />
     <div class="hero-copy">
       <h1>Neeraj Nagar</h1>
       <p class="hero-role">Software Engineer specializing in C++ and high-performance systems.</p>
-      <p class="hero-proof">Cisco · Former Samsung R&amp;D · Waterloo MASc · IIT (BHU) · 4 patents</p>
+      <p class="hero-proof">Cisco · Former Samsung R&amp;D · UWaterloo MASc · Bachelor’s, IIT (BHU) · 4 patents</p>
       <div class="hero-actions">
         <a class="btn" href="assets/Neeraj_Nagar_Resume.pdf" target="_blank" rel="noopener">View Résumé</a>
         <a class="btn ghost" href="#contact">Contact Me</a>
       </div>
       <div class="hero-socials" aria-label="Professional profiles">
-        <a class="hero-social-link" href="https://github.com/neerajnagar26" target="_blank" rel="noopener">
-          <img class="btn-icon" src="assets/icon-github.png" alt="" /> GitHub
+        <a class="hero-social-link" href="https://github.com/nnagar26" target="_blank" rel="noopener">
+          <img class="btn-icon" src="assets/icon-github.png" alt="" decoding="async" /> GitHub
         </a>
         <a class="hero-social-link" href="https://www.linkedin.com/in/nnagar26/" target="_blank" rel="noopener">
-          <img class="btn-icon" src="assets/icon-linkedin.png" alt="" /> LinkedIn
+          <img class="btn-icon" src="assets/icon-linkedin.png" alt="" decoding="async" /> LinkedIn
         </a>
       </div>
     </div>
@@ -66,7 +73,7 @@
     <h2>About</h2>
     <div class="about-copy">
       <p>
-        I’m a Software Engineer at Cisco focused on C++, Python, and high-performance systems. Previously, I developed camera algorithms at Samsung R&amp;D for flagship Galaxy devices, working on image stabilization, motion deblurring, and low-light photography. I hold an MASc from the University of Waterloo and a B.Tech from IIT (BHU), with 4 patents and 3 research publications.
+        I’m a Software Engineer at Cisco focused on C++, Python, and high-performance systems. At Samsung R&amp;D, I developed camera algorithms for flagship Galaxy devices, working on stabilization, motion deblurring, and low-light photography. My background spans systems software, computer vision, and applied machine learning, and I enjoy turning complex requirements into reliable, efficient software.
       </p>
     </div>
   </div>
@@ -77,53 +84,34 @@
       <h3>Technical Skills</h3>
       <div class="skills-grid">
         <div class="skill-category">
-          <h4>Programming Languages</h4>
+          <h4>Languages</h4>
           <div class="skill-tags">
             <span class="skill-tag">C++</span>
-            <span class="skill-tag">C</span>
             <span class="skill-tag">Python</span>
+            <span class="skill-tag">C</span>
           </div>
         </div>
         
         <div class="skill-category">
-          <h4>Frameworks & Libraries</h4>
-          <div class="skill-tags">
-            <span class="skill-tag">TensorFlow</span>
-            <span class="skill-tag">PyTorch</span>
-            <span class="skill-tag">Keras</span>
-            <span class="skill-tag">YOLOv8</span>
-            <span class="skill-tag">scikit-learn</span>
-            <span class="skill-tag">Pandas</span>
-            <span class="skill-tag">NumPy</span>
-            <span class="skill-tag">Matplotlib</span>
-          </div>
-        </div>
-        
-        <div class="skill-category">
-          <h4>Tools & Platforms</h4>
-          <div class="skill-tags">
-            <span class="skill-tag">Docker</span>
-            <span class="skill-tag">CI/CD</span>
-            <span class="skill-tag">Git</span>
-            <span class="skill-tag">Perforce</span>
-            <span class="skill-tag">CUDA</span>
-            <span class="skill-tag">MATLAB</span>
-            <span class="skill-tag">Jupyter</span>
-            <span class="skill-tag">Google Colab</span>
-            <span class="skill-tag">Visual Studio</span>
-            <span class="skill-tag">MiniZinc</span>
-          </div>
-        </div>
-        
-        <div class="skill-category">
-          <h4>Areas of Expertise</h4>
+          <h4>Core Expertise</h4>
           <div class="skill-tags">
             <span class="skill-tag">Computer Vision</span>
             <span class="skill-tag">Image Processing</span>
+            <span class="skill-tag">Systems Software</span>
             <span class="skill-tag">Machine Learning</span>
-            <span class="skill-tag">Deep Learning</span>
             <span class="skill-tag">Algorithm Design</span>
-            <span class="skill-tag">Operating Systems</span>
+          </div>
+        </div>
+        
+        <div class="skill-category">
+          <h4>Tools &amp; Frameworks</h4>
+          <div class="skill-tags">
+            <span class="skill-tag">OpenCV</span>
+            <span class="skill-tag">PyTorch</span>
+            <span class="skill-tag">TensorFlow</span>
+            <span class="skill-tag">CUDA</span>
+            <span class="skill-tag">Docker</span>
+            <span class="skill-tag">Git</span>
           </div>
         </div>
       </div>
@@ -140,7 +128,7 @@
       <article class="card hover-elevate">
         <header class="card-head">
           <div class="head-left">
-            <img class="org-logo" src="assets/logo-cisco.png" alt="Cisco logo" loading="lazy"/>
+            <img class="org-logo" src="assets/logo-cisco.png" alt="Cisco logo" loading="lazy" decoding="async" />
             <div class="exp-text">
                 <div class="exp-role">Software Engineer III</div>
                 <div class="exp-company">Cisco Systems Canada Inc.</div>
@@ -155,45 +143,11 @@
           <li>Collaborate with cross-functional engineers to develop, test, and deliver reliable software.</li>
         </ul>
       </article>
-      
-      <article class="card hover-elevate">
-        <header class="card-head">
-          <div class="head-left">
-            <img class="org-logo" src="assets/logo-uwaterloo.png" alt="University of Waterloo logo" loading="lazy"/>
-            <div class="exp-text">
-                <div class="exp-role">Teaching Assistant</div>
-                <div class="exp-company">University of Waterloo</div>
-            </div>
-          </div>
-          <span class="date">Jan 2024 – Aug 2025</span>
-        </header>
-        <p>Courses: SE 350 (Operating Systems), ECE 350 (RTOS), ECE 307 (Probability &amp; Statistics).</p>
-        <ul>
-          <li>Led labs and 1:1 support for RTOS with C/C++; mentored students on debugging and performance.</li>
-          <li>Graded assignments/exams; ran review sessions and simplified complex topics per student feedback.</li>
-        </ul>
-      </article>
 
       <article class="card hover-elevate">
         <header class="card-head">
           <div class="head-left">
-            <img class="org-logo" src="assets/logo-uwaterloo.png" alt="University of Waterloo logo" />
-            <!-- <h3>Graduate Research Student · University of Waterloo</h3> -->
-            <div class="exp-text">
-                <div class="exp-role">Graduate Research Student</div>
-                <div class="exp-company">University of Waterloo</div>
-            </div>
-          </div>
-          <span class="date">Sep 2023 – Aug 2025</span>
-        </header>
-        <p>Research-focused master's under Prof. Sebastian Fischmeister; coursework in algorithms, AI/ML, data modeling, and intelligent systems.</p>
-      </article>
-
-      <article class="card hover-elevate">
-        <header class="card-head">
-          <div class="head-left">
-            <img class="org-logo" src="assets/logo-samsung-research.png" alt="Samsung Research logo" />
-            <!-- <h3>Software Engineer, Camera Team · Samsung R&D Institute India</h3> -->
+            <img class="org-logo" src="assets/logo-samsung-research.png" alt="Samsung Research logo" loading="lazy" decoding="async" />
             <div class="exp-text">
               <div class="exp-role">Software Engineer, Camera Team</div>
               <div class="exp-company">Samsung R&amp;D Institute India</div>
@@ -201,21 +155,50 @@
           </div>
           <span class="date">Feb 2021 – Jul 2023</span>
         </header>
-        <p class="experience-tech">C++, Python, OpenCV, Camera HAL, OIS, Image Processing Algorithms</p>
+        <p class="experience-tech">C++, Python, OpenCV, Camera HAL, OIS, Image Processing</p>
         <ul>
-          <li>Engineered Samsung smartphone camera algorithms for image stabilization, macro photography, and reduced motion blur by <strong>30%</strong></li>
-          <li>Optimized hyper-lapse video stabilization on flagship devices, enhancing smoothness and stability</li>
-          <li>Improved low-light photography performance by <strong>20%</strong> via optimized camera processing algorithms</li>
-          <li>Integrated camera firmware updates for Android 12 & 13 on Galaxy S21 and S22 devices</li>
-          <li>Filed 4 patents and co-authored research papers on camera technologies and AI-driven enhancement</li>
+          <li>Developed camera algorithms for flagship Galaxy devices, reducing motion blur by <strong>30%</strong> and improving low-light performance by <strong>20%</strong>.</li>
+          <li>Integrated Android 12 and 13 camera firmware updates across Galaxy S21 and S22 devices.</li>
+          <li>Filed 4 patents and co-authored research publications on camera systems and image enhancement.</li>
         </ul>
       </article>
 
       <article class="card hover-elevate">
         <header class="card-head">
           <div class="head-left">
-            <img class="org-logo" src="assets/logo-samsung-research.png" alt="Samsung Research logo" />
-            <!-- <h3>Software Engineer Intern · Samsung R&D Institute India</h3> -->
+            <img class="org-logo" src="assets/logo-uwaterloo.png" alt="University of Waterloo logo" loading="lazy" decoding="async" />
+            <div class="exp-text">
+              <div class="exp-role">Graduate Research Student</div>
+              <div class="exp-company">University of Waterloo</div>
+            </div>
+          </div>
+          <span class="date">Sep 2023 – Aug 2025</span>
+        </header>
+        <p class="experience-tech">Time-Series Analysis, STUMPY, MiniZinc, Constraint Optimization</p>
+        <ul>
+          <li>Developed a thesis method for mining recurrent time-series patterns using matrix profiles and constraint optimization.</li>
+          <li>Published and presented the resulting research at IEEE/ACIS SERA 2025.</li>
+        </ul>
+      </article>
+
+      <article class="card hover-elevate">
+        <header class="card-head">
+          <div class="head-left">
+            <img class="org-logo" src="assets/logo-uwaterloo.png" alt="University of Waterloo logo" loading="lazy" decoding="async" />
+            <div class="exp-text">
+              <div class="exp-role">Teaching Assistant</div>
+              <div class="exp-company">University of Waterloo</div>
+            </div>
+          </div>
+          <span class="date">Jan 2024 – Aug 2025</span>
+        </header>
+        <p>Mentored students in operating systems, RTOS, C/C++, debugging, and performance analysis across SE 350, ECE 350, and ECE 307.</p>
+      </article>
+
+      <article class="card hover-elevate">
+        <header class="card-head">
+          <div class="head-left">
+            <img class="org-logo" src="assets/logo-samsung-research.png" alt="Samsung Research logo" loading="lazy" decoding="async" />
             <div class="exp-text">
               <div class="exp-role">Software Engineer Intern</div>
               <div class="exp-company">Samsung R&amp;D Institute India</div>
@@ -225,9 +208,8 @@
         </header>
         <p class="experience-tech">TensorFlow, OpenCV, CNN, Python, Model Optimization</p>
         <ul>
-          <li>Built a semantic style-transfer CNN in TensorFlow + OpenCV with <strong>88% accuracy</strong>, reducing ADE20K classes from 150 to 27</li>
-          <li>Pruned models to reduce runtime by <strong>60%</strong> without image quality loss</li>
-          <li>Collaborated on published research paper on deep learning applications</li>
+          <li>Built a semantic style-transfer CNN with <strong>88% accuracy</strong>, consolidating 150 ADE20K classes into 27 production-oriented categories.</li>
+          <li>Pruned the model to reduce runtime by <strong>60%</strong> without perceptible image-quality loss.</li>
         </ul>
       </article>
     </div>
@@ -241,7 +223,7 @@
       <div class="edu-item card hover-elevate">
         <header class="card-head">
           <div class="head-left">
-            <img class="org-logo" src="assets/logo-uwaterloo.png" alt="University of Waterloo logo" />
+            <img class="org-logo" src="assets/logo-uwaterloo.png" alt="University of Waterloo logo" loading="lazy" decoding="async" />
             <h3>University of Waterloo — MASc (thesis), Computer Software in Electrical and Computer Engineering</h3>
           </div>
           <span class="date">Sep 2023 – Aug 2025</span>
@@ -253,7 +235,7 @@
       <div class="edu-item card hover-elevate">
         <header class="card-head">
           <div class="head-left">
-            <img class="org-logo" src="assets/logo-iitbhu.png" alt="IIT (BHU) logo" />
+            <img class="org-logo" src="assets/logo-iitbhu.png" alt="IIT (BHU) logo" loading="lazy" decoding="async" />
             <h3>IIT (BHU), Varanasi — B.Tech, Electronics Engineering</h3>
           </div>
           <span class="date">Jul 2016 – May 2020</span>
@@ -273,7 +255,7 @@
       <div class="edu-item card hover-elevate">
         <header class="card-head">
           <div class="head-left">
-            <img class="org-logo" src="assets/logo-uwaterloo.png" alt="University of Waterloo logo" />
+            <img class="org-logo" src="assets/logo-uwaterloo.png" alt="University of Waterloo logo" loading="lazy" decoding="async" />
             <div class="edu-text">
               <div class="edu-university">University of Waterloo</div>
               <div class="edu-degree">MASc (thesis), Computer Software in Electrical and Computer Engineering</div>
@@ -289,7 +271,7 @@
       <div class="edu-item card hover-elevate">
         <header class="card-head">
           <div class="head-left">
-            <img class="org-logo" src="assets/logo-iitbhu.png" alt="IIT (BHU) logo" />
+            <img class="org-logo" src="assets/logo-iitbhu.png" alt="IIT (BHU) logo" loading="lazy" decoding="async" />
             <div class="edu-text">
               <div class="edu-university">IIT (BHU), Varanasi</div>
               <div class="edu-degree">B.Tech, Electronics Engineering</div>
@@ -311,49 +293,44 @@
     <div class="stack-lg">
       <article class="card hover-elevate">
         <header><h3>High-Coverage Pattern Mining in Time-Series Data</h3></header>
-        <p class="project-tech">Python, STUMPY, MiniZinc, Constraint Solving, Algorithm Design</p>
-        <p class="project-description">Designed an algorithm for recurring motif detection in univariate time-series data using advanced constraint solving techniques.</p>
+        <p class="project-tech">Python, STUMPY, MiniZinc, Constraint Optimization</p>
+        <p class="project-description">Developed a thesis method for selecting recurrent patterns that maximize coverage of complex time-series data.</p>
         <ul>
-          <li>Implemented STUMPY matrix profile for efficient motif detection</li>
-          <li>Used MiniZinc constraint solving for automated motif selection</li>
-          <li>Applied algorithm design principles for optimal pattern coverage</li>
-          <li>Developed scalable solution for large time-series datasets</li>
+          <li>Used STUMPY matrix profiles to identify candidate motifs efficiently.</li>
+          <li>Formulated pattern selection as a MiniZinc constraint-optimization problem.</li>
+          <li>Published and presented the research at IEEE/ACIS SERA 2025.</li>
         </ul>
         <div class="project-links">
-          <!-- <span class="project-link is-disabled" aria-disabled="true">View Details (Coming soon)</span> -->
-          <!-- <span class="project-link is-disabled" aria-disabled="true">Source Code (Coming soon)</span> -->
+          <a class="project-link" href="https://hdl.handle.net/10012/22411" target="_blank" rel="noopener">View Thesis</a>
         </div>
       </article>
       
       <article class="card hover-elevate">
         <header><h3>Emergency Vehicle Detection Using YOLOv8</h3></header>
-        <p class="project-tech">Python, YOLOv8, Computer Vision, Image Augmentation, Real-time Detection</p>
-        <p class="project-description">Built a real-time emergency vehicle detection system with high accuracy siren recognition capabilities.</p>
+        <p class="project-tech">Python, YOLOv8, Computer Vision, Image Augmentation</p>
+        <p class="project-description">Built a vision-only driver-assistance system for detecting emergency vehicles and active lightbars on constrained hardware.</p>
         <ul>
-          <li>Achieved <strong>78% siren recognition accuracy</strong> using YOLOv8</li>
-          <li>Augmented 2600+ images to boost system robustness</li>
-          <li>Deployed on constrained hardware for real-time performance</li>
-          <li>Optimized model for emergency response applications</li>
+          <li>Achieved <strong>78% recognition accuracy</strong> with a lightweight YOLOv8 model.</li>
+          <li>Corrected, relabeled, and augmented more than 2,600 images.</li>
+          <li>Evaluated sequential and parallel vehicle/lightbar detection pipelines.</li>
         </ul>
         <div class="project-links">
-          <!-- <span class="project-link is-disabled" aria-disabled="true">View Demo (Coming soon)</span> -->
-          <!-- <span class="project-link is-disabled" aria-disabled="true">Source Code (Coming soon)</span> -->
+          <a class="project-link" href="https://github.com/nnagar26/Enhanced-Driver-Assistance" target="_blank" rel="noopener">GitHub</a>
+          <a class="project-link" href="https://github.com/nnagar26/Enhanced-Driver-Assistance/blob/main/report/Report.pdf" target="_blank" rel="noopener">Research Report</a>
         </div>
       </article>
       
       <article class="card hover-elevate">
-        <header><h3>Autonomous Vehicle with Image Processing</h3></header>
-        <p class="project-tech">Python, OpenCV, Arduino, Dijkstra's Algorithm, Color Segmentation</p>
-        <p class="project-description">Developed object detection using color segmentation and optimized path planning with Arduino integration.</p>
+        <header><h3>Lane and Vehicle Detection &amp; Tracking</h3></header>
+        <p class="project-tech">Python, OpenCV, Computer Vision, Vehicle Tracking</p>
+        <p class="project-description">Implemented a road-scene perception pipeline for lane detection and vehicle tracking.</p>
         <ul>
-          <li>Implemented real-time object detection using OpenCV and Python</li>
-          <li>Optimized path planning with Dijkstra's algorithm, reducing route computation time by <strong>20%</strong></li>
-          <li>Integrated Arduino for motor control and sensor data processing</li>
-          <li>Applied color segmentation techniques for obstacle detection</li>
+          <li>Combined image-processing stages for robust lane-boundary detection.</li>
+          <li>Tracked vehicles across frames to improve temporal consistency.</li>
+          <li>Documented the complete implementation in a public repository.</li>
         </ul>
         <div class="project-links">
-          <!-- <span class="project-link is-disabled" aria-disabled="true">View Demo (Coming soon)</span> -->
-          <!-- <span class="project-link is-disabled" aria-disabled="true">Source Code (Coming soon)</span> -->
+          <a class="project-link" href="https://github.com/nnagar26/SDC-Lane-and-Vehicle-Detection-Tracking" target="_blank" rel="noopener">GitHub</a>
         </div>
       </article>
       
@@ -451,41 +428,16 @@
 <section id="contact" class="section contact-section">
   <div class="container">
     <h2>Contact</h2>
-    <p>Interested in discussing a software engineering role or project? Reach out directly or use the form.</p>
+    <p>Interested in discussing a software engineering role or project? I’d be glad to connect.</p>
     <div class="contact-meta" aria-label="Contact details">
       <span>Ottawa, Canada 🇨🇦</span>
       <a href="mailto:nnagar@uwaterloo.ca">nnagar@uwaterloo.ca</a>
       <a href="tel:+14378082696">(+1) 437-808-2696</a>
     </div>
-    <div class="grid-2">
-      <!-- <div class="card hover-elevate">
-        <p><strong>Email:</strong> <a href="mailto:nnagar@uwaterloo.ca">nnagar@uwaterloo.ca</a></p>
-        <p><strong>Phone:</strong> <a href="tel:+14378082696">(+1) 437-808-2696</a></p>
-        <p><strong>GitHub:</strong> <a href="https://github.com/neerajnagar26" target="_blank" rel="noopener">github.com/neerajnagar26</a></p>
-        <p><strong>LeetCode:</strong> <a href="https://leetcode.com/u/neerajnagar/" target="_blank" rel="noopener">leetcode.com/u/neerajnagar/</a></p>
-        <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/neerajnagar26/" target="_blank" rel="noopener">linkedin.com/in/neerajnagar26</a></p>
-      </div> -->
-
-      <!-- Front-end only form (mailto flow) -->
-      <form id="contactForm" class="card form hover-elevate" style="margin: 0 auto; max-width: 600px;">
-        <div class="form-field">
-          <label for="name">Name</label>
-          <input type="text" name="name" id="name" required autocomplete="name" aria-describedby="name-error">
-          <p class="field-error" id="name-error" aria-live="polite"></p>
-        </div>
-        <div class="form-field">
-          <label for="email">Email</label>
-          <input type="email" name="email" id="email" required autocomplete="email" aria-describedby="email-error">
-          <p class="field-error" id="email-error" aria-live="polite"></p>
-        </div>
-        <div class="form-field">
-          <label for="message">Message</label>
-          <textarea name="message" id="message" rows="5" required aria-describedby="message-error"></textarea>
-          <p class="field-error" id="message-error" aria-live="polite"></p>
-        </div>
-        <button class="btn" data-arrow type="submit" id="sendBtn">Send</button>
-        <p id="formMsg" class="hint form-status" role="status" aria-live="polite"></p>
-      </form>
+    <div class="contact-actions">
+      <a class="btn" href="mailto:nnagar@uwaterloo.ca">Email Me</a>
+      <a class="btn ghost" href="https://www.linkedin.com/in/nnagar26/" target="_blank" rel="noopener">LinkedIn</a>
+      <a class="btn ghost" href="assets/Neeraj_Nagar_Resume.pdf" target="_blank" rel="noopener">View Résumé</a>
     </div>
   </div>
 </section>
@@ -500,7 +452,6 @@
 <!-- Back to top button -->
 <button class="back-to-top" id="backToTop" aria-label="Back to top">↑</button>
 
-<!-- Keep your existing script.js for theme toggle, mailto form, etc. -->
 <script src="script.js"></script>
 
 

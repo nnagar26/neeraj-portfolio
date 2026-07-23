@@ -841,6 +841,12 @@ html[data-theme="dark"]{
   .contact-meta a:hover {
     color: var(--accent);
   }
+
+  .contact-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
   
   /* Education */
   .edu{display:grid; gap:16px}
@@ -1883,25 +1889,99 @@ html[data-theme="dark"]{
 
 
 
-/* ========= Contact form improvements ========= */
-
-  /* 1) Make the contact grid a single centered column */
-.contact-section .grid-2{
-  display: grid;
-  grid-template-columns: 1fr;   /* one column */
-  justify-items: center;        /* center the child horizontally */
-}
-
-/* 2) Keep the form nicely sized and centered */
-#contactForm{
-  width: 100%;
-  max-width: 600px;             /* you already set this inline; moving to CSS is cleaner */
-  margin: 0 auto;
-}
-
-
   @media (max-width: 640px) {
   .hero-inner {
     padding-top: 20px; /* adjust value until the circle isn’t cut */
+  }
+}
+
+/* Minimal recruiter-facing visual system */
+.hero::before {
+  background: color-mix(in hsl, var(--bg) 78%, transparent);
+}
+
+.avatar {
+  animation: none;
+  border-width: 2px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, .18);
+}
+
+.avatar:hover {
+  transform: none;
+  border-color: var(--accent);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, .18);
+}
+
+.section {
+  padding: 64px 0;
+}
+
+.section.alt {
+  background: var(--bg-alt);
+}
+
+.section.alt::before,
+.card::before {
+  display: none;
+}
+
+h2 {
+  color: var(--text);
+  background: none;
+  -webkit-text-fill-color: currentColor;
+}
+
+h2::after {
+  width: 40px;
+  height: 2px;
+  background: var(--accent);
+}
+
+.card {
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  box-shadow: none;
+  backdrop-filter: none;
+  transition: border-color .2s ease;
+}
+
+.hover-elevate:hover {
+  transform: none;
+  border-color: color-mix(in hsl, var(--accent) 55%, var(--border));
+  box-shadow: none;
+}
+
+.skill-tag,
+.project-link,
+.date,
+.experience-tech,
+.project-tech {
+  border-radius: 8px;
+}
+
+.skill-tag:hover,
+.project-link:hover,
+.details div:hover {
+  transform: none;
+  box-shadow: none;
+}
+
+.org-logo {
+  width: 34px;
+  height: 34px;
+  object-fit: contain;
+  filter: none;
+  opacity: .85;
+}
+
+.org-logo:hover,
+.card:hover .org-logo {
+  transform: none;
+  opacity: 1;
+}
+
+@media (max-width: 600px) {
+  .section {
+    padding: 44px 0;
   }
 }
