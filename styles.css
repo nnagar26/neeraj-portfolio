@@ -677,6 +677,16 @@ html[data-theme="dark"]{
     background: var(--accent);
     border-radius: 2px;
   }
+
+  .section-subtitle {
+    margin: 36px 0 16px;
+    font-size: 18px;
+    color: var(--text);
+  }
+
+  #research h2 + .section-subtitle {
+    margin-top: 16px;
+  }
   
   /* Layout */
   .grid-2{display:grid; grid-template-columns:1fr 1fr; gap:22px}
@@ -1822,5 +1832,4 @@ html[data-theme="dark"]{
     padding-top: 20px; /* adjust value until the circle isn’t cut */
   }
 }
-
 
