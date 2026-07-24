@@ -1901,15 +1901,25 @@ html[data-theme="dark"]{
 }
 
 .avatar {
-  animation: none;
+  animation: avatarFloat 6s ease-in-out infinite;
   border-width: 2px;
-  box-shadow: 0 8px 24px rgba(0, 0, 0, .18);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, .18), 0 0 0 0 color-mix(in hsl, var(--accent) 35%, transparent);
 }
 
 .avatar:hover {
-  transform: none;
-  border-color: var(--accent);
-  box-shadow: 0 8px 24px rgba(0, 0, 0, .18);
+  transform: translateY(-6px) scale(1.03);
+  border-color: var(--accent-hover);
+  box-shadow: 0 14px 34px rgba(0, 0, 0, .22), 0 0 0 5px color-mix(in hsl, var(--accent) 22%, transparent);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .avatar {
+    animation: none;
+  }
+
+  .avatar:hover {
+    transform: none;
+  }
 }
 
 .section {
